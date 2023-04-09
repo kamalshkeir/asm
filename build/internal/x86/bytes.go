@@ -5,7 +5,7 @@ import (
 	. "github.com/mmcloughlin/avo/operand"
 	. "github.com/mmcloughlin/avo/reg"
 
-	"github.com/segmentio/asm/cpu"
+	"github.com/kamalshkeir/kasm/cpu"
 )
 
 type Memory struct {
@@ -254,7 +254,7 @@ func (v VariableLengthBytes) Generate(inputs []Register, n Register) {
 	Comment("AVX optimized version for medium to large size inputs.")
 	Label("avx2")
 	var memory []Memory
-	for i := 0; i < int(unroll / 32); i++ {
+	for i := 0; i < int(unroll/32); i++ {
 		memory = append(memory, Memory{Size: 32, Offset: i * 32})
 	}
 	v.Process(inputs, memory...)

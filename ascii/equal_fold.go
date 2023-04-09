@@ -1,7 +1,7 @@
 package ascii
 
 import (
-	"github.com/segmentio/asm/internal/unsafebytes"
+	"github.com/kamalshkeir/kasm/internal/unsafebytes"
 )
 
 // EqualFold is a version of bytes.EqualFold designed to work on ASCII input

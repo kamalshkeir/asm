@@ -6,10 +6,10 @@ package main
 import (
 	"bytes"
 
+	. "github.com/kamalshkeir/kasm/build/internal/asm"
 	. "github.com/mmcloughlin/avo/build"
 	. "github.com/mmcloughlin/avo/operand"
 	. "github.com/mmcloughlin/avo/reg"
-	. "github.com/segmentio/asm/build/internal/asm"
 )
 
 func init() {

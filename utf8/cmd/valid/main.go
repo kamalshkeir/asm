@@ -9,8 +9,8 @@ import (
 	"strings"
 	stdlib "unicode/utf8"
 
-	"github.com/segmentio/asm/ascii"
-	"github.com/segmentio/asm/utf8"
+	"github.com/kamalshkeir/kasm/ascii"
+	"github.com/kamalshkeir/kasm/utf8"
 )
 
 func main() {

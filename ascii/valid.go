@@ -1,6 +1,6 @@
 package ascii
 
-import "github.com/segmentio/asm/internal/unsafebytes"
+import "github.com/kamalshkeir/kasm/internal/unsafebytes"
 
 // Valid returns true if b contains only ASCII characters.
 func Valid(b []byte) bool {

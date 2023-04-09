@@ -3,9 +3,9 @@ package keyset
 import (
 	"bytes"
 
-	"github.com/segmentio/asm/cpu"
-	"github.com/segmentio/asm/cpu/arm64"
-	"github.com/segmentio/asm/cpu/x86"
+	"github.com/kamalshkeir/kasm/cpu"
+	"github.com/kamalshkeir/kasm/cpu/arm64"
+	"github.com/kamalshkeir/kasm/cpu/x86"
 )
 
 // New prepares a set of keys for use with Lookup.

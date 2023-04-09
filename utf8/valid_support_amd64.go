@@ -4,8 +4,8 @@
 package utf8
 
 import (
-	"github.com/segmentio/asm/cpu"
-	"github.com/segmentio/asm/cpu/x86"
+	"github.com/kamalshkeir/kasm/cpu"
+	"github.com/kamalshkeir/kasm/cpu/x86"
 )
 
 var noAVX2 = !cpu.X86.Has(x86.AVX2)

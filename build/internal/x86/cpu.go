@@ -7,7 +7,7 @@ import (
 	"math"
 	"math/bits"
 
-	"github.com/segmentio/asm/cpu"
+	"github.com/kamalshkeir/kasm/cpu"
 )
 
 // JumpIfFeature constructs a jump sequence that tests for one or more feature flags.

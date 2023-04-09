@@ -3,7 +3,7 @@ package sortedset
 import (
 	"bytes"
 
-	"github.com/segmentio/asm/internal"
+	"github.com/kamalshkeir/kasm/internal"
 )
 
 // Dedupe writes to dst the deduplicated sequence of items of the given size

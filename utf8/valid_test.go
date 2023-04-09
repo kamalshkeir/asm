@@ -8,8 +8,8 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/segmentio/asm/ascii"
-	"github.com/segmentio/asm/internal/buffer"
+	"github.com/kamalshkeir/kasm/ascii"
+	"github.com/kamalshkeir/kasm/internal/buffer"
 )
 
 type byteRange struct {

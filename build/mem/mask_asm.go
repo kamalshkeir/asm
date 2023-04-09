@@ -1,3 +1,4 @@
+//go:build ignore
 // +build ignore
 
 package main
@@ -5,7 +6,7 @@ package main
 import (
 	. "github.com/mmcloughlin/avo/build"
 
-	"github.com/segmentio/asm/build/internal/x86"
+	"github.com/kamalshkeir/kasm/build/internal/x86"
 )
 
 func init() {

@@ -1,3 +1,3 @@
 package mem
 
-import _ "github.com/segmentio/asm/cpu"
+import _ "github.com/kamalshkeir/kasm/cpu"

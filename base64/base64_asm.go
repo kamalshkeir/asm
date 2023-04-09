@@ -7,7 +7,7 @@ package base64
 import (
 	"encoding/base64"
 
-	"github.com/segmentio/asm/internal/unsafebytes"
+	"github.com/kamalshkeir/kasm/internal/unsafebytes"
 )
 
 // An Encoding is a radix 64 encoding/decoding scheme, defined by a

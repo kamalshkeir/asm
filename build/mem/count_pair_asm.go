@@ -1,3 +1,4 @@
+//go:build ignore
 // +build ignore
 
 package main
@@ -6,11 +7,11 @@ import (
 	"fmt"
 	"math/bits"
 
+	. "github.com/kamalshkeir/kasm/build/internal/x86"
+	"github.com/kamalshkeir/kasm/cpu"
 	. "github.com/mmcloughlin/avo/build"
 	. "github.com/mmcloughlin/avo/operand"
 	. "github.com/mmcloughlin/avo/reg"
-	. "github.com/segmentio/asm/build/internal/x86"
-	"github.com/segmentio/asm/cpu"
 )
 
 func init() {

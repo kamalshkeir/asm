@@ -1,21 +1,23 @@
+//go:build ignore
 // +build ignore
-//
+
 // This code is a go assembly implementation of:
 //
 // Muła, Wojciech, & Lemire, Daniel (Thu, 14 Jun 2018).
-//   Faster Base64 Encoding and Decoding Using AVX2 Instructions.
-//   [arXiv:1704.00605](https://arxiv.org/abs/1704.00605)
+//
+//	Faster Base64 Encoding and Decoding Using AVX2 Instructions.
+//	[arXiv:1704.00605](https://arxiv.org/abs/1704.00605)
 //
 // ...with changes to support multiple encodings.
 package main
 
 import (
+	. "github.com/kamalshkeir/kasm/build/internal/asm"
+	. "github.com/kamalshkeir/kasm/build/internal/x86"
 	. "github.com/mmcloughlin/avo/build"
 	. "github.com/mmcloughlin/avo/gotypes"
 	. "github.com/mmcloughlin/avo/operand"
 	. "github.com/mmcloughlin/avo/reg"
-	. "github.com/segmentio/asm/build/internal/asm"
-	. "github.com/segmentio/asm/build/internal/x86"
 )
 
 var lutHi = ConstBytes("b64_dec_lut_hi", []byte{

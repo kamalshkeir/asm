@@ -1,3 +1,4 @@
+//go:build ignore
 // +build ignore
 
 package main
@@ -5,12 +6,12 @@ package main
 import (
 	"fmt"
 
+	. "github.com/kamalshkeir/kasm/build/internal/x86"
 	. "github.com/mmcloughlin/avo/build"
 	. "github.com/mmcloughlin/avo/operand"
-	. "github.com/segmentio/asm/build/internal/x86"
 
+	"github.com/kamalshkeir/kasm/cpu"
 	"github.com/mmcloughlin/avo/reg"
-	"github.com/segmentio/asm/cpu"
 )
 
 const unroll = 8
